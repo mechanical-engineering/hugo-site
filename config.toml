@@ -1,0 +1,113 @@
+baseurl = "https://xoriopalio.github.io"
+DefaultContentLanguage = "en"
+Title = "Το Χωριό Παλιό"
+theme = "beautifulhugo"
+#theme ="qubt"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+disqusShortname = "xoriopalio-gitlab-io"
+#googleAnalytics = "UA-10773558-19"
+paginate = 10
+
+ 
+[Params]
+  subtitle = "και η ζωή στον κήπο"
+  logo = "img/avatar-icon.png"
+  favicon = "./favicon/favicon.ico"  # ήταν στο img folder
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  RemovePathAccents = true
+  readingTime = true
+  useHLJS = true
+  showRelatedPosts = true
+  gh_url = "https://api.github.com/users/igoumeninja/repos"
+  gh_user = "igoumeninja"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+
+[author]
+authors = [
+  {name = "Argiris", location = "Igoumenitsa"},
+  {name = "Aris", location = "Igoumenitsa"}
+]
+#
+#  [author.aris]
+#    name = "Aris A."
+#    location = "Igoumenitsa"
+#  [author.jane_smith]
+#    name = "Argiris G."
+#    location = "Igoumenitsa"
+[params.author]
+  name = "Aris"
+  website = "https://xoriopalio.github.io"
+#  email = "igoumeninja@gmail.com"
+#  facebook = "toxoriopalio"
+#  tumblr = "bostani.tumblr.com"           
+#  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "igoumeninja"
+#  gitlab = "username"
+  twitter = "xoriopalio"
+#  reddit = "username"
+#  linkedin = "username"
+#  xing = "username"
+#  stackoverflow = "users/XXXXXXX/username"
+#  snapchat = "username"
+#  youtube = "user/username" # or channel/channelname
+#  soundcloud = "username"
+#  spotify = "username"
+#  bandcamp = "username"
+#  itchio = "username"
+#  vk = "username"
+#  paypal = "username"
+#  telegram = "username"
+
+################################################
+#[[menu.main]]
+#    name = "Αναζήτηση"
+#    url = "post/search/"
+#    weight = 1
+################################################
+ #[[menu.main]]
+ #   identifier = "archive"   
+ #   name = "Αρχείο"                 
+ #   weight = 3
+
+
+[[menu.main]]
+ #   parent = "archive"   
+    name = "Αρχείο[date]"
+    url = "post/archive-list/"
+    weight = 1
+   
+[[menu.main]]
+#    parent = "archive"   
+    name = "Αρχείο[a->b]"
+    url = "post/archive_alphabetically/"   
+    weight = 2
+
+
+[[menu.main]]
+    name = "Λέξεις Κλειδιά"
+    url = "post/tagcloud/"
+    weight = 3
+
+#[[menu.main]]
+#    name = "tags"
+#    url = "tags/"
+#    weight = 4
+
+[[menu.main]]
+    name = "Gyras"
+    url = "/tags/gyras/"
+    weight = 4
+
+[[menu.main]]
+    name = "dev"
+    url = "post/hugo-tricks/"
+    weight = 5
